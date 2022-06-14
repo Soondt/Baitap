@@ -67,25 +67,25 @@ std::string Geometry::toString()
     return "1 " + s1 + " " + s2 + " " + s3 + " " + s4;
 }
 
-float Geometry :: GetPerimeter(float width, float length)
+float Geometry::GetPerimeter(float width, float length)
 { 
     //Perimeter
     return 2*(width + length);
 }
 
-float Geometry :: GetPerimeter(float a, float b, float c)
+float Geometry::GetPerimeter(float a, float b, float c)
 { 
     //Perimeter
     return (a + b + c);
 }
 
-float Geometry :: GetPerimeter(float Radius)
+float Geometry::GetPerimeter(float Radius)
 { 
     //Perimeter
     return 2*pi*Radius;
 }
 
-float Geometry :: GetPerimeter(int a, int b)
+float Geometry::GetPerimeter(int a, int b)
 { 
     //Perimeter
     return 2*pi*sqrt((a*a + b*b)/2);

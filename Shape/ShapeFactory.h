@@ -1,4 +1,3 @@
-#pragma once
 #ifndef SHAPEFACTORY_H
 #define SHAPEFACTORY_H
 #include <iostream>
@@ -6,8 +5,6 @@
 #include "Geometry.h"
 #include <list>
 #include <fstream>
-
-
 class ShapeFactory : public Shape
 {
 private:
@@ -101,5 +98,4 @@ void ShapeFactory :: saveShapesToFile(const std::string &filename, const std::li
 	f.close();
 	cout << "da ghi thanh cong" << endl;
 }
-
 #endif
