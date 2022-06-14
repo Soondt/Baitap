@@ -1,15 +1,23 @@
 #ifndef SHAPE_H
 #define SHAPE_H
 #include <iostream>
+#include <math.h>
 
-class Shape
+typedef struct Point
 {
+    float x;
+    float y;
+} Point_t;
+
+class Shape{
     public:
-        Shape();
-        virtual float GetPerimeter();
-        virtual float GetArea();
-        virtual void fromString(const std::string &s);
-        virtual std::string toString();
-        ~Shape();
+    Shape();
+    ~Shape();
+    virtual float getPerimeter();
+    virtual float getArea();
+    virtual int fromString(const std::string &s);
+    virtual std::string toString();
+    float Distance(Point_t a, Point_t b);
+    void inp_point(Point_t &a);
 };
-#endif //SHAPE_H
+#endif // SHAPE

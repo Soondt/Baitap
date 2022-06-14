@@ -1,28 +1,34 @@
 #include "Shape.h"
 
-Shape::Shape(){
-    x = 0;
-    y = 0;
+float Shape::getPerimeter()
+{
+    // do something
 }
 
-Shape::~Shape()
+float Shape::getArea()
 {
-    x = 0;
-    y = 0;
+    // do something
 }
 
-float Shape::Getx()
+std::string Shape::toString()
 {
-    return x;
+    // do something
 }
 
-float Shape ::Gety()
+int Shape::fromString(const std::string &s)
 {
-    return y;
+    // do something
 }
 
-void Shape::Set(float x, float y)
+float Shape::Distance(Point_t a, Point_t b)
 {
-    this ->x = x;
-    this ->y = y ;
+    return sqrt((b.x - a.x) * (b.x - a.x) + (b.y - a.y) * (b.y - a.y));
+}
+
+void Shape::inp_point(Point_t &a)
+{
+    std::cout<< "_x = ";
+    std::cin >> a.x;
+    std::cout << "_y = ";
+    std::cin >> a.y;
 }
