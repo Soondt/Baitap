@@ -87,7 +87,7 @@ string createShape(int sh)
     case 3:
         std::cout << "Nhap toa do diem a: "; 
         inp_point(a);      
-        cout << "Nhap ban kinh truc x: ";  
+        std::cout << "Nhap ban kinh truc x: ";  
         std::cin >> tmp; 
         std::cout << "Nhap ban kinh truc y: ";  
         std::cin >> tmp; 
@@ -95,6 +95,5 @@ string createShape(int sh)
     default:
         break;
     }
-    string ss = js.dump();
     return ss;
 }
